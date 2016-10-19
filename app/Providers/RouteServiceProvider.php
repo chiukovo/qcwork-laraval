@@ -17,6 +17,13 @@ class RouteServiceProvider extends ServiceProvider
     protected $namespace = 'App\Http\Controllers';
 
     /**
+     * controller Developer
+     *
+     * @return void
+     */
+    protected $developerNamespace = 'App\Http\Controllers\Developer';
+
+    /**
      * Define your route model bindings, pattern filters, etc.
      *
      * @return void
@@ -72,7 +79,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         Route::group([
             'middleware' => 'developer',
-            'namespace' => $this->namespace,
+            'namespace' => $this->developerNamespace,
             'prefix' => 'developer',
         ], function ($router) {
             require base_path('routes/developer.php');

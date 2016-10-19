@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Qcwork Admin</title>
+        <title>Qcwork Developer</title>
         <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
         <link rel="stylesheet" href="{{asset('css/animate.css')}}">
-        <link rel="stylesheet" href="{{asset('css/auth/login.css')}}">
+        <link rel="stylesheet" href="{{asset('css/login.css')}}">
         <style>
             [v-cloak] { display: none }
         </style>
@@ -49,7 +49,7 @@
                         </pattern>
                        </defs>
                        <text y="50px">
-                         <tspan x="280px" text-anchor="middle" fill="#000">CASINO API LOGIN</tspan>
+                         <tspan x="280px" text-anchor="middle" fill="#000">QCWORK LOGIN</tspan>
                       </text>
                     </svg>
                   </div>
@@ -81,7 +81,7 @@
     </div>
     <div id="particles"></div>
     </body>
-    <script src="{{asset('assets/js/jquery-3.0.0.min.js')}}"></script>
-    <script src="{{asset('assets/js/vue.js')}}"></script>
-    <script src="{{asset('assets/js/login.js')}}"></script>
+    <script src="{{asset('js/jquery-3.0.0.min.js')}}"></script>
+    <script src="{{asset('js/vue.js')}}"></script>
+    <script src="{{asset('js/login.js')}}"></script>
 </html>

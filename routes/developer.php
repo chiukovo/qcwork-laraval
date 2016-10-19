@@ -13,6 +13,10 @@
 
 //後台登入頁面
 Route::get('login', 'Auth\LoginController@index');
+//auth
+Route::post('auth', 'Auth\LoginController@auth');
+//logout
+Route::post('logout', 'Auth\LoginController@logout');
 
 //後台
 Route::group(['middleware' => 'developerAuth'], function() {
