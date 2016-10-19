@@ -12,6 +12,9 @@
 */
 
 //後台登入頁面
-Route::get('/login', function () {
-    //todo
+Route::get('login', 'Auth\LoginController@index');
+
+//後台
+Route::group(['middleware' => 'developerAuth'], function() {
+    Route::get('/', 'IndexController@index');
 });
